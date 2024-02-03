@@ -236,7 +236,7 @@ body {
   height: 32px;
 }
 
-.footer__buttons {
+.menu__buttons {
   display: flex;
 
   gap: 16px;
@@ -269,18 +269,18 @@ body {
   color: rgba(126, 126, 130, 1)
 }
 
-.footer {
+.menu__footer {
   display: flex;
   padding-left: 24px;
   flex-direction: column;
 }
 
-.footer__mail {
+.menu__mail {
   font-weight: 500;
   margin-bottom: 12px;
 }
 
-.footer__telephone {
+.menu__telephone {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 40px;
