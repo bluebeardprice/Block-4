@@ -1,281 +1,311 @@
 @font-face {
-    font-family: "TTLakes";
-    src: local("TTLakes-Regular"),
-      url("./fonts/TTLakes-Regular.woff2") format("woff2"),
-      url("./fonts/TTLakes-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "TTLakes";
-    src: local("TTLakes-Bold"), url("./fonts/TTLakes-Bold.woff2") format("woff2"),
-      url("./fonts/TTLakes-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "TTLakes";
-    src: local("TTLakes-Medium"),
-      url("./fonts/TTLakes-Medium.woff2") format("woff2"),
-      url("./fonts/TTLakes-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  html,
-  body,
-  div,
-  span,
-  applet,
-  object,
-  iframe,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  a,
-  abbr,
-  acronym,
-  address,
-  big,
-  cite,
-  code,
-  del,
-  dfn,
-  em,
-  img,
-  ins,
-  kbd,
-  q,
-  s,
-  samp,
-  small,
-  strike,
-  strong,
-  sub,
-  sup,
-  tt,
-  var,
-  b,
-  u,
-  i,
-  center,
-  dl,
-  dt,
-  dd,
-  ol,
-  ul,
-  li,
-  fieldset,
-  form,
-  label,
-  legend,
-  table,
-  caption,
-  tbody,
-  tfoot,
-  thead,
-  tr,
-  th,
-  td,
-  article,
-  aside,
-  canvas,
-  details,
-  embed,
-  figure,
-  figcaption,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  output,
-  ruby,
-  section,
-  summary,
-  time,
-  mark,
-  audio,
-  video {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-  }
-  
-  ul {
-    padding: 0;
-    list-style: none;
-  }
-  
-  button {
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  body {
-    background-color: rgba(248, 248, 248, 1);
-    font-family: "TTLakes", Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .header {
-    height: 88px;
-    justify-content: space-between;
-    background-color: white;
-
-  }
-  
-  .header button {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-  .header__close {
-    margin-left:24px;
-    margin-right: 17px;
-
-  } ;
-
-  .header__logo {
-    margin-top: 19px;
-    margin-bottom: 18px;
-    margin-right: 78px;
-  }
-  .header__search{
-    margin-left: 78px;
-    margin-right: 24px;
-    justify-self: end;
-  }
-
-  .header__line {
-    display: flex;
-    height: 32px;
-    width: 2px;
-    background-color: rgba(234, 234, 234, 1);
-    margin-top: 28px;
-    margin-bottom: 28px;
-    border-radius: 1px;
-    margin-right: 20px;
-  }
-  
-  .header-icons__list {
-    display: flex;
-  }
-  
-  .header__content {
-    display: flex;
-   align-items: center;
-   box-sizing: border-box;
-
-   
-  }
-
- .menu{
-width: 320px;
-height: 1024px;
-position: absolute;
-background-color:white;
-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), 
--2px 0px 4px 0px rgba(69, 79, 126, 0.02);
- }
- 
- .chapter-list{
-padding-top: 26px;
- }
-
- .chapter-list__chapter{ 
-    margin-bottom:32px;
-    margin-left: 24px;
- }
- .chapter-list__chapter:hover{
-    color:rgba(126, 126, 130, 1);
-    cursor: pointer;
- }
- .chapter-list__line {
-    background-color: rgba(65, 246, 215, 1);
-    width: 4px;
-    border-radius: 0 4px 4px 0;
-    height: 32px;
-  }
-  .footer__buttons{
-    display: flex;
-
- gap: 16px;
- margin-bottom: 16px;
-  }
-  .aside__chapter-list{
-    margin-bottom: 268px;
-  }
-
-.button {
-    transition: opacity .2s ease-in-out;
+  font-family: "TTLakes";
+  src: local("TTLakes-Regular"),
+    url("./fonts/TTLakes-Regular.woff2") format("woff2"),
+    url("./fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-.button:hover{
-    cursor: pointer;
-    opacity: 50%;
-  }
-  .localization__languages{
-    display: flex;
-    gap: 7px;
-    font-weight: 500;
-  }
-  .localization__button:hover{
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Bold"), url("./fonts/TTLakes-Bold.woff2") format("woff2"),
+    url("./fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-    color: rgba(126, 126, 130, 1)
-  }
-  .footer{
-    margin-left: 24px;
-  }
-  .footer__mail{
-    font-weight: 500;
-    margin-bottom: 12px;
-  }
-  .footer__telephone{
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 40px; 
-  }
-  .chapter-list__line-block{
-    display: flex;
-    align-items:center;
-    gap:20px;
-     }
-  .line-block__service{
-    margin-bottom: 26px;
-    align-self: center;
-    margin-left: 0;
-  
-  }
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Medium"),
+    url("./fonts/TTLakes-Medium.woff2") format("woff2"),
+    url("./fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+.list-reset {
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgba(248, 248, 248, 1);
+  font-family: "TTLakes", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header {
+  justify-content: space-between;
+  background-color: white;
+
+}
+
+.header button {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.header__close {
+  margin-left: 24px;
+  margin-right: 17px;
+
+}
+
+
+.header__logo {
+  margin-top: 19px;
+  margin-bottom: 18px;
+  margin-right: 78px;
+}
+
+.header__search {
+  margin-right: 24px;
+  justify-self: end;
+}
+
+.header__line {
+  display: flex;
+  height: 32px;
+  width: 2px;
+  background-color: rgba(234, 234, 234, 1);
+  margin-top: 28px;
+  margin-bottom: 28px;
+  border-radius: 1px;
+  margin-right: 20px;
+}
+
+.header-icons__list {
+  display: flex;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+
+}
+
+.menu {
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  width: 320px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.chapter-list {
+  padding-top: 26px;
+}
+
+.chapter-list__chapter {
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+
+.chapter-list__chapter:hover {
+  color: rgba(126, 126, 130, 1);
+  cursor: pointer;
+}
+
+.chapter-list__line {
+  background-color: rgba(65, 246, 215, 1);
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  height: 32px;
+}
+
+.footer__buttons {
+  display: flex;
+
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+
+
+.button {
+  transition: opacity .2s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.localization__languages {
+  display: flex;
+  gap: 7px;
+}
+
+.localization__button {
+  font-weight: 500;
+}
+
+.localization__button:hover {
+
+  color: rgba(126, 126, 130, 1)
+}
+
+.footer {
+  display: flex;
+  padding-left: 24px;
+  flex-direction: column;
+}
+
+.footer__mail {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.footer__telephone {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.chapter-list__line-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.line-block__service {
+  margin-bottom: 26px;
+  align-self: center;
+
+}
+
+.aside__chapter-list::before {
+  content: "";
+  background-image: url(./img/highlight.svg);
+  background-position: 0 0;
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  top:19px;
+}
+.aside__chapter-list{
+  position: relative;
+}
