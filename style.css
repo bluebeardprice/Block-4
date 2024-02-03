@@ -257,6 +257,7 @@ body {
 .localization__languages {
   display: flex;
   gap: 7px;
+  margin-bottom: 32px;
 }
 
 .localization__button {
